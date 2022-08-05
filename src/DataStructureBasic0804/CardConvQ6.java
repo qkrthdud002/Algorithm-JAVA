@@ -29,5 +29,26 @@ public class CardConvQ6 {
         char[] cno = new char[32]; // 변환 뒤의 각 자리를 저장하는 문자인 배열
 
         System.out.println("10진수를 기수변환합니다.");
+        do {
+            do {
+                System.out.print("변환하는 음이 아닌 정수 : ");
+                no = sc.nextInt();
+            } while(no < 0);
+
+            do {
+                System.out.print("어떤 진수로 변환할까요? (2~36) : ");
+                cd = sc.nextInt();
+            } while(cd < 2 || cd > 36);
+
+            dno = cardConv(no, cd, cno); // no를 cd진수로 변환
+
+            System.out.print(cd + "진수로는 ");
+            for(int i = 0; i < dno; i++) // 윗자리부터 차례로 나타냄
+                System.out.print(cno[i]);
+            System.out.println("입니다.");
+
+            System.out.print("한번 더 할까요? (1.예/ 2.아니오) : ");
+            retry = sc.nextInt();
+        } while(retry == 1);
     }
 }
