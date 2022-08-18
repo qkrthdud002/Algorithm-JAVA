@@ -20,7 +20,7 @@ public class BinSearch {
                 pr = pc - 1;            // 검색 범위를 앞쪽 절반으로 좁힌다.
         }while (pl <= pr);
 
-        return -1;
+        return -1;                      // 검색 실패
     }
 
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class BinSearch {
         System.out.print("x[0] : ");
         x[0] = sc.nextInt();
 
-        for(int i = 0; i < num; i++){
+        for(int i = 1; i < num; i++){
             do{
                 System.out.print("x[" + i + "] : ");
                 x[i] = sc.nextInt();
