@@ -34,9 +34,21 @@ public class SeqSearchEx {
 
         System.out.print("요솟수 : ");
         int num = sc.nextInt();
-        int[] x = new int[new]; // 요솟수 num인 배열
+        int[] x = new int[num]; // 요솟수 num인 배열
 
-        for()
+        for(int i = 0; i < num; i++) {
+            System.out.print("x[" + i + "] : ");
+            x[i] = sc.nextInt();
+        }
+
+        System.out.print("찾는 값 : "); // 키 값을 입력 받음
+        int ky = sc.nextInt();
+
+        int idx = seqSearchEx(x, num, ky); // 배열 x에서 값이 ky인 요소를 검색
+
+        if(idx == -1)
+            System.out.println("그 값의 요소가 없습니다.");
+        else
+            System.out.println(ky + "은 x[" + idx + "]에 있습니다.");
     }
-
 }
