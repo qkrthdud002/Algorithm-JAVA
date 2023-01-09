@@ -50,5 +50,6 @@ public class SeqSearchEx {
             System.out.println("그 값의 요소가 없습니다.");
         else
             System.out.println(ky + "은 x[" + idx + "]에 있습니다.");
+
     }
 }
