@@ -29,6 +29,7 @@ public class SeqSearchEx {
         return -1; // 검색 실패
     }
 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
