@@ -1,4 +1,4 @@
-package JavaLecture;
+package JavaLecture.VendingMachine;
 
 public class VendingMachine {
     // field(가지는 것들)

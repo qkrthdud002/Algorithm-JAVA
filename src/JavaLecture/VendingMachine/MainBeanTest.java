@@ -1,4 +1,4 @@
-package JavaLecture;
+package JavaLecture.VendingMachine;
 
 public class MainBeanTest {
     public static void main(String[] args) {

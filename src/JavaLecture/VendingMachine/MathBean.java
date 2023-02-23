@@ -1,4 +1,4 @@
-package JavaLecture;
+package JavaLecture.VendingMachine;
 
 public class MathBean {
     public void printClassName() {
